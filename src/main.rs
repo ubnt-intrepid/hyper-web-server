@@ -56,7 +56,7 @@ fn file_handler(req: MyRequest, mut res: Response) {
 
 fn dir_handler(req: MyRequest, mut res: Response) {
     let to_li = |e| {
-        let p = format!("{}/{}", &req.uri[1..], e);
+        let p = format!("{}/{}", req.uri, e);
         format!("<li><a href=\"{}\">{}</a></li>", p, e)
     };
 
