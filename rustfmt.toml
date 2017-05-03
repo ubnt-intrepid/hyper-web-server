@@ -1,0 +1,4 @@
+array_layout = "Block"
+chain_indent = "Visual"
+closure_block_indent_threshold = 1
+write_mode = "Overwrite"
